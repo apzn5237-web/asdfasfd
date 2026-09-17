@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MP3 Share</title><link rel="stylesheet" href="style.css"></head>
+<body><main><header><div class="brand"><span>♪</span> MP3 Share</div><p>Envie suas músicas e disponibilize para quem visitar o site.</p></header>
+<section class="upload-card"><h1>Compartilhe um MP3</h1><p>Selecione um arquivo de até 25 MB. Ele aparecerá na biblioteca após o envio.</p><form id="upload-form"><label class="dropzone" for="file"><input id="file" name="file" type="file" accept="audio/mpeg,.mp3" required><strong id="file-label">Escolher arquivo MP3</strong><small>Somente .mp3 • Máximo 25 MB</small></label><button id="submit" type="submit">Enviar música</button></form><p id="message" role="status"></p></section>
+<section class="library"><div class="section-title"><h2>Biblioteca pública</h2><span id="count"></span></div><div id="songs" class="songs"><p class="empty">Carregando músicas...</p></div></section></main>
+<template id="song-template"><article class="song"><div class="music-icon">♫</div><div class="song-info"><strong></strong><span></span></div><a>Baixar <span>↓</span></a></article></template><script src="app.js"></script></body></html>
